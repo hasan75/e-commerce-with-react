@@ -2,9 +2,20 @@
   display: flex;
   border-bottom: 1px solid lightgray;
   margin-right: 7px;
+  padding-bottom: 7px;
 }
 
 .product-name {
   color: blue;
   font-weight: 400;
+}
+
+.btn-regular {
+  background-color: rgb(226, 176, 48);
+  width: 150px;
+  height: 25px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
 }
