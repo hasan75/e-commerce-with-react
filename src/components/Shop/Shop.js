@@ -11,7 +11,7 @@ const Shop = () => {
         .then(data => setProducts(data))
     },[]);
     const haldleAddToCart = (product) => {
-        console.log("Clicked")
+        console.log("Clicked", product.name)
     }
     return (
         <div className="shop-container">
