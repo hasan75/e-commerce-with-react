@@ -3,7 +3,7 @@ import './Product.css'
 
 const Product = (props) => {
     const {name, img, price, stock, seller} = props.product;
-    console.log(props.product)
+    // console.log(props.product)
     return (
         <div className="product">
             <div>
