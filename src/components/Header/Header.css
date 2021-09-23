@@ -3,10 +3,11 @@
 }
 .logo {
   height: 50px;
+  margin-top: 10px;
 }
 .header nav {
   background-color: black;
-  line-height: 40px;
+  line-height: 50px;
   text-align: left;
   padding-left: 50px;
   margin-top: 10px;
@@ -20,4 +21,5 @@
 }
 .header nav a:hover {
   background-color: lightgray;
+  color: black;
 }
