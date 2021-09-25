@@ -13,7 +13,7 @@ const Shop = () => {
         .then(data => setProducts(data))
     },[]);
     const haldleAddToCart = (product) => {
-        console.log("Clicked", product.name);
+        //console.log("Clicked", product.name);
         const newCart = [...cart, product];
         setCart(newCart)
 
