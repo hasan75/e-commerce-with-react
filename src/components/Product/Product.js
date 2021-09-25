@@ -6,7 +6,7 @@ import './Product.css'
 import Rating from 'react-rating';
 
 const Product = (props) => {
-    const {name, img, price, stock, seller} = props.product;
+    const {name, img, price, stock, seller, star} = props.product;
     const cartIcon = <FontAwesomeIcon icon={faShoppingCart} />;
     // console.log(props.product)
     return (
@@ -20,9 +20,9 @@ const Product = (props) => {
             <p>Price:{price}</p>
             <p> <small>only {stock} left in stoch - order soon</small></p>
             <Rating
-             initialRating = {3}
-             emptySymbol="far fa-star"
-             fullSymbol="fas fa-star"
+             initialRating = {star}
+             emptySymbol="far fa-star icon-color"
+             fullSymbol="fas fa-star icon-color"
              readonly></Rating>
             <br />
             <button onClick={() => props.haldleAddToCart(props.product)} className="btn-regular">{cartIcon}  Add to Cart</button>
