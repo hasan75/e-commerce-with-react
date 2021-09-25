@@ -15,6 +15,7 @@ const Shop = () => {
         .then(res => res.json())
         .then(data => {
             setProducts(data);
+            setDisplayProducts(data)
             //console.log('product received');
         })
     },[]);
@@ -54,7 +55,6 @@ const Shop = () => {
         const searchText = event.target.value;
         const matchedProduct = products.filter(product => product.name.toLowerCase().includes(searchText.toLowerCase()));
         setDisplayProducts(matchedProduct);
-        console.log(matchedProduct);
     }
 
     return (
